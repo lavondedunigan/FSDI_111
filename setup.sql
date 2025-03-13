@@ -11,7 +11,7 @@ CREATE TABLE user (
     last_name VARCHAR(45),
     hobbies TEXT,
     is_online BOOLEAN DEFAULT 0
-):
+);
 
 DROP TABLE user;
 
@@ -29,7 +29,7 @@ INSERT INTO user (
     "Rafael",
     "GPL",
     "DIY stuff"
-):
+);
 
 -- Read:
 -- Read single records
@@ -42,7 +42,7 @@ SELECT * FROM user;
 UPDATE user
     SET
         first_name="John",
-        last_name="Doe".
+        last_name="Doe",
         hobbies="Playing tennis and watching TV"
 WHERE id=1;
 
